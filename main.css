@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Balsamiq+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* GENERAL STYLING */
+
+.wrapper {
+  width: 100%;
+  padding: 10px 24px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.item {
+  flex: 1;
+  width: 80%;
+  margin: 0 15px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+.block {
+  display: block;
+}
+
+@media all and (min-width: 600px) {
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* HEADER STYLING */
+
+.group-nav {
+  margin: 0 15px;
+}
+
+header {
+  background-color: #3d5a80;
+  display: flex;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header h1 {
+  display: flex;
+  margin: 0 15px;
+  color: #e0fbfc;
+  font-family: 'Amatic SC', cursive;
+  font-size: 56px;
+}
+
+header nav > ul {
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+header nav ul li > a {
+  color: #e0fbfc;
+  text-decoration: none;
+  font-family: 'Balsamiq Sans', cursive;
+  margin-right: 24px;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+@media all and (max-width: 600px) {
+  header nav {
+    justify-content: center;
+  }
+
+  header h1 {
+    justify-content: center;
+  }
+}
+
+/* MAIN */
+
+main, p, ol {
+  background-color: #98c1d9;
+  color: #3d5a80;
+  font-size: 18px;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+h2 {
+  margin: 0;
+  font-size: 42px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.img-border {
+  width: 100%;
+  border: solid;
+  border-radius: 1%;
+  border-color: #ee6c4d;
+  border-width: 2px;
+}
+
+a {
+  color: #293241;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #293241;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #e0fbfc;
+  padding: 15px;
+}
+
+footer img {
+  width: 36px;
+}
+
+footer a {
+  display: inline-block;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
