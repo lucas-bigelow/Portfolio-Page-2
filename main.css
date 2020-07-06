@@ -28,6 +28,14 @@
   flex: 2;
 }
 
+.item-octuplet {
+  flex: 8;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
 .block {
   display: block;
 }
